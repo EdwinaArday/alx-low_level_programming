@@ -1,8 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* main -main entry point
+/*
+ * main -main entry point
  * Return: should always return 0
+*/
+/*
+ * betty style doc for function main
 */
 int main(void)
 {
@@ -10,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	 if (n > 0)
+	if (n > 0)
 	{
 		printf("%d is positive\n", n);
 	}

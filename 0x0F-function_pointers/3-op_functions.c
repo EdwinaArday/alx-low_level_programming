@@ -11,7 +11,7 @@ int op_mod(int a, int b);
  * @a: this represents the first number
  * @b: this represents the second number
  *
- * Return: this represents the value of the sum of a and b
+ * Return: the value of the sum of a and b
  */
 
 int op_add(int a, int b)
@@ -24,7 +24,7 @@ int op_add(int a, int b)
  * @a: this represents the first number
  * @b: this represents the first number
  *
- * Return: this should return the difference of a and b
+ * Return: the value of the difference of a and b
  */
 
 int op_sub(int a, int b)
@@ -37,7 +37,7 @@ int op_sub(int a, int b)
  * @a: this represents the first number
  * @b: this represents the second number
  *
- * Return: this represents the product of a and b
+ * Return: the value of the product of a and b
  */
 
 int op_mul(int a, int b)
@@ -50,7 +50,7 @@ int op_mul(int a, int b)
  * @a: this represents the first number
  * @b: this represents the second number
  *
- * Return: this should return the value of the division of the two numbers
+ * Return: the value of the division of the two numbers
  */
 
 int op_div(int a, int b)
@@ -63,7 +63,7 @@ int op_div(int a, int b)
  * @a: this represents the first number
  * @b: this represents the second number
  *
- * Return: the remainder of the division of a and b
+ * Return: the value of the remainder of the division of a and b
  */
 
 int op_mod(int a, int b)

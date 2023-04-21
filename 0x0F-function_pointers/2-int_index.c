@@ -1,4 +1,4 @@
-#include "functions_pointers.h"
+#include "function_pointers.h"
 /**
  * int_index - returns index place if comparison = true, else return -1
  * @array: array

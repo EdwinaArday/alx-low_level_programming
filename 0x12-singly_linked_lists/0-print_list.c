@@ -1,25 +1,25 @@
-#ifndef LISTS_H
-#define LISTS_H
+#include <stdio.h>
+#include "lists.h"
 
 /**
- * struct list_s - this represents singly linked list
- * @str: string
- * @len: the length of the string
- * @next: this points to the next node
- * Description: singly linked list node structure
+ * print_list - this prints all of the elements present in a linked list
+ * @h: this represents the pointer to print the list_t list
+ *
+ * Return: should return the number of nodes printed
  */
 
-typedef struct list_s
+size_t print_list(const list_t *h)
 {
-	char *str;
-	unsigned int len;
-	struct list_s *next;
-} list_t;
+	size_t s = 0;
 
-size_t print_list(const list_t *h);
-size_t list_len(const list_t *h);
-list_t *add_node(list_t **head, const char *str);
-list_t *add_node_end(list_t **head, const char *str);
-void free_list(list_t *head);
-
-#endif
+	while (h)
+	{
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		s++;
+	}
+	return (s);
+}

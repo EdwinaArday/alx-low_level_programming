@@ -19,4 +19,3 @@ void *malloc_checked(unsigned int w)
 
 	return (pntr);
 }
-
